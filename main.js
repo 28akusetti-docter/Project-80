@@ -18,15 +18,14 @@ function show()
 	var i= names_of_people.join("<br>");
 	console.log(names_of_people);
 	document.getElementById("p1").innerHTML=i.toString();
-	document.getElementById("     ").style.display="block";
+	document.getElementById("sort_button").style.display="block";
 	// display the name in the id= sort_button
 	}
 
 
 function sorting()
 	{
-		names_of_people           // add the sort function
-		// .the sort function is .sort();
+		names_of_people.sort()         
 		var i= names_of_people.join("<br>");
 		console.log(names_of_people);		
 		document.getElementById("sorted").innerHTML=i.toString();
